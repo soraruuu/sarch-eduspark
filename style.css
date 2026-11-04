@@ -8,8 +8,8 @@
     --text-dark: #2C3E50;        /* Teks Gelap Kontras */
     --text-muted: #6C7A89;       /* Teks Abu-abu */
     --border-color: #E2D7CD;
-    --shadow: 0 12px 28px rgba(184, 50, 39, 0.12);
-    --shadow-hover: 0 18px 36px rgba(184, 50, 39, 0.25);
+    --shadow: 0 8px 20px rgba(184, 50, 39, 0.08);
+    --shadow-hover: 0 14px 28px rgba(184, 50, 39, 0.18);
 }
 
 * {
@@ -17,6 +17,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Mencegah geser/scroll samping di HP */
 }
 
 body {
@@ -35,38 +40,43 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.5rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
     cursor: pointer;
     padding: 6px 12px;
@@ -82,37 +92,37 @@ header {
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
     color: white;
-    padding: 3.5rem 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
-    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-container {
     max-width: 850px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .hero-badge {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 6px 16px;
+    padding: 4px 14px;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.5px;
     display: inline-block;
-    margin-bottom: 1rem;
-    backdrop-filter: blur(5px);
+    margin-bottom: 0.8rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0.95;
     font-weight: 300;
     max-width: 750px;
@@ -123,31 +133,32 @@ header {
 main {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.2rem;
     flex: 1;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .section-title-wrapper {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-title-wrapper h2 {
     color: var(--primary);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
 }
 
 .section-title-wrapper p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
-/* Tab View Switcher */
 .content-view {
     display: none;
+    width: 100%;
 }
 
 .content-view.active {
@@ -160,33 +171,40 @@ main {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Container Utama Wireframe Grid */
 .wireframe-grid {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
     align-items: center;
+    width: 100%;
 }
 
-/* Row 1: 3 Lingkaran */
+/* Row 1: 3 Lingkaran Infografis */
 .grid-row-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 950px;
+    justify-content: center;
+    margin-bottom: 3.5rem; /* MEMAKSA JARAK ANTARA BARIS ATAS DAN BAWAH */
+}
+
+/* Row 2: 2 Lingkaran (Presisi Pas di Tengah) */
+.grid-row-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     width: 100%;
     max-width: 950px;
 }
 
-/* Row 2: 2 Lingkaran */
-.grid-row-bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    width: 100%;
-    max-width: 630px;
-    margin: 0 auto;
+/* Memastikan lebar kartu di baris bawah proporsional (seukuran kartu atas) */
+.grid-row-bottom .menu-card {
+    width: calc(33.333% - 1.35rem);
 }
 
-/* --- MENU CARD (CIRCULAR BUTTON DESIGN) --- */
+/* --- MENU CARD --- */
 .menu-card {
     display: flex;
     flex-direction: column;
@@ -194,22 +212,23 @@ main {
     text-align: center;
     cursor: pointer;
     background: var(--surface);
-    padding: 2rem 1.2rem;
+    padding: 1.8rem 1rem;
     border-radius: 16px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .menu-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
     border-color: var(--primary);
 }
 
 .circle-button {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--bg-light);
     border: 3px solid var(--primary);
@@ -218,7 +237,7 @@ main {
     align-items: center;
     color: var(--primary);
     transition: all 0.3s ease;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .menu-card:hover .circle-button {
@@ -228,14 +247,14 @@ main {
 }
 
 .circle-button i {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .card-label {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .card-subtag {
@@ -263,6 +282,7 @@ main {
     transition: opacity 0.3s ease;
     z-index: 1000;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .modal-overlay.active {
@@ -284,7 +304,7 @@ main {
 
 .modal-header {
     background-color: var(--bg-light);
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,10 +313,10 @@ main {
 
 .modal-header h3 {
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .close-btn {
@@ -326,8 +346,10 @@ main {
 footer {
     background-color: var(--surface);
     border-top: 1px solid var(--border-color);
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -337,40 +359,89 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .footer-text h4 {
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
 
 .footer-text p {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     max-width: 650px;
 }
 
 .footer-logo {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: var(--primary);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 850px) {
-    .grid-row-top, .grid-row-bottom {
-        grid-template-columns: 1fr;
-        max-width: 320px;
+/* --- RESPONSIVE MOBILE OPTIMIZATION --- */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        text-align: center;
+        padding: 0.8rem 1rem;
     }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
+
+    .hero {
+        padding: 2.2rem 1rem;
+    }
+
     .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Ubah Grid menjadi 1 kolom vertikal pas di layar HP */
+    .grid-row-top {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .grid-row-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-row-bottom .menu-card {
+        width: 100%;
+    }
+
+    .circle-button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .circle-button i {
         font-size: 1.8rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
