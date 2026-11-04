@@ -5,29 +5,29 @@ const mediaLinks = {
     // --- 1. INFOGRAFIS MATERI ---
     infografis1: {
         title: "Infografis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS1/preview" 
+        url: "https://drive.google.com/file/d/1OAIhulKAw7lsImfDKcrOWzbsT3waOm4X/view?usp=sharing" 
     },
     infografis2: {
         title: "Infografis: Reaksi Peletakan",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS2/preview"
+        url: "https://drive.google.com/file/d/1fgZ-5owkpqIFPUqhjWkR3YiWU_R5rVcO/view?usp=sharing"
     },
     infografis3: {
         title: "Infografis: Tegangan dan Regangan",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS3/preview"
+        url: "https://drive.google.com/file/d/1FxofnoqFqxP0C3kAIvXlJLCnGUz6wkUK/view?usp=sharing"
     },
 
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
     videoTumpuan: {
         title: "Video: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com/embed/"
     },
     videoReaksi: {
         title: "Video: Reaksi Peletakan",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com/embed/"
     },
     videoTegangan: {
         title: "Video: Tegangan dan Regangan",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com/embed/"
     },
 
     // --- 3. KUIS EVALUASI / GFORM (3 TOPIC) ---
