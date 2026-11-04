@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARch.Eduspark - Media Pembelajaran Mekanika Teknik</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo" onclick="switchTab('beranda')">
+                <i class="fa-solid fa-compass-drafting"></i> SARch.Eduspark
+            </a>
+            <ul class="nav-links">
+                <li><a id="nav-beranda" class="active" onclick="switchTab('beranda')">Beranda</a></li>
+                <li><a id="nav-materi" onclick="switchTab('materi')">Materi</a></li>
+                <li><a id="nav-video" onclick="switchTab('video')">Video</a></li>
+                <li><a id="nav-kuis" onclick="switchTab('kuis')">Kuis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <span class="hero-badge"><i class="fa-solid fa-graduation-cap"></i> Media Pembelajaran SMK</span>
+            <h1>Mekanika Teknik</h1>
+            <p>Media Pembelajaran Interaktif untuk Memahami Konsep Tumpuan, Reaksi Peletakan, serta Tegangan & Regangan</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main>
+        <div class="section-title-wrapper">
+            <h2 id="sectionTitle">Menu Utama</h2>
+            <p id="sectionSub">Pilih materi, video, atau kuis di bawah ini!</p>
+        </div>
+
+        <div class="wireframe-grid">
+            
+            <!-- SECTION BERANDA & MATERI (5 LINGKARAN ASLI WIREFRAME) -->
+            <div id="view-beranda" class="content-view active">
+                <!-- Baris Atas: 3 Infografis -->
+                <div class="grid-row-top">
+                    <div class="menu-card" data-media="infografis1">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="card-label">Tumpuan Sendi, Rol, & Jepit</div>
+                        <span class="card-subtag">Infografis</span>
+                    </div>
+
+                    <div class="menu-card" data-media="infografis2">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                        </div>
+                        <div class="card-label">Reaksi Peletakan</div>
+                        <span class="card-subtag">Infografis</span>
+                    </div>
+
+                    <div class="menu-card" data-media="infografis3">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                        </div>
+                        <div class="card-label">Tegangan & Regangan</div>
+                        <span class="card-subtag">Infografis</span>
+                    </div>
+                </div>
+
+                <!-- Baris Bawah: 2 Tombol Pindah Sub-Menu (Video & Kuis) -->
+                <div class="grid-row-bottom">
+                    <div class="menu-card" onclick="switchTab('video')">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="card-label">Video Pembelajaran</div>
+                        <span class="card-subtag">Pilih Topik Video</span>
+                    </div>
+
+                    <div class="menu-card" onclick="switchTab('kuis')">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <div class="card-label">Kuis & Evaluasi</div>
+                        <span class="card-subtag">Pilih Topik Kuis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION SUB-MENU VIDEO (3 LINGKARAN KHUSUS) -->
+            <div id="view-video" class="content-view">
+                <div class="grid-row-top">
+                    <div class="menu-card" data-media="videoTumpuan">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="card-label">Video: Tumpuan Sendi, Rol, & Jepit</div>
+                        <span class="card-subtag">Video Materi</span>
+                    </div>
+
+                    <div class="menu-card" data-media="videoReaksi">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                        </div>
+                        <div class="card-label">Video: Reaksi Peletakan</div>
+                        <span class="card-subtag">Video Materi</span>
+                    </div>
+
+                    <div class="menu-card" data-media="videoTegangan">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                        </div>
+                        <div class="card-label">Video: Tegangan & Regangan</div>
+                        <span class="card-subtag">Video Materi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION SUB-MENU KUIS (3 LINGKARAN KHUSUS) -->
+            <div id="view-kuis" class="content-view">
+                <div class="grid-row-top">
+                    <div class="menu-card" data-media="kuisTumpuan">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="card-label">Kuis: Tumpuan Sendi, Rol, & Jepit</div>
+                        <span class="card-subtag">Google Form</span>
+                    </div>
+
+                    <div class="menu-card" data-media="kuisReaksi">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                        </div>
+                        <div class="card-label">Kuis: Reaksi Peletakan</div>
+                        <span class="card-subtag">Google Form</span>
+                    </div>
+
+                    <div class="menu-card" data-media="kuisTegangan">
+                        <div class="circle-button">
+                            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                        </div>
+                        <div class="card-label">Kuis: Tegangan & Regangan</div>
+                        <span class="card-subtag">Google Form</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <h4>SARch.Eduspark</h4>
+                <p>Platform pembelajaran digital Mekanika Teknik yang dirancang khusus untuk siswa SMK Teknik Konstruksi dan Bangunan. Pembelajaran jadi lebih interaktif, visual, dan terstruktur.</p>
+            </div>
+            <div class="footer-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP MEDIA -->
+    <div class="modal-overlay" id="mediaModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-book-open"></i> Media Pembelajaran</h3>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="mediaIframe" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
