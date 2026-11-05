@@ -5,43 +5,43 @@ const mediaLinks = {
     // --- 1. INFOGRAFIS MATERI ---
     infografis1: {
         title: "Infografis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS1/preview" 
+        url: "https://drive.google.com/file/d/1OAIhulKAw7lsImfDKcrOWzbsT3waOm4X/preview" 
     },
     infografis2: {
         title: "Infografis: Reaksi Peletakan",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS2/preview"
+        url: "https://drive.google.com/file/d/1fgZ-5owkpqIFPUqhjWkR3YiWU_R5rVcO/preview"
     },
     infografis3: {
         title: "Infografis: Tegangan dan Regangan",
-        url: "https://drive.google.com/file/d/1SAMPLE_LINK_INFOGRAFIS3/preview"
+        url: "https://drive.google.com/file/d/1FxofnoqFqxP0C3kAIvXlJLCnGUz6wkUK/preview"
     },
 
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
     videoTumpuan: {
         title: "Video: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com"
     },
     videoReaksi: {
         title: "Video: Reaksi Peletakan",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com"
     },
     videoTegangan: {
         title: "Video: Tegangan dan Regangan",
-        url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        url: "https://www.youtube.com"
     },
 
     // --- 3. KUIS EVALUASI / GFORM (3 TOPIC) ---
     kuisTumpuan: {
         title: "Kuis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE1/viewform?embedded=true"
+        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
     },
     kuisReaksi: {
         title: "Kuis: Reaksi Peletakan",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE2/viewform?embedded=true"
+        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
     },
     kuisTegangan: {
         title: "Kuis: Tegangan dan Regangan",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE3/viewform?embedded=true"
+        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
     }
 };
 
