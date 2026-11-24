@@ -129,6 +129,82 @@ header {
     margin: 0 auto;
 }
 
+/* =========================================
+   STYLE CAPAIAN & TUJUAN PEMBELAJARAN
+   ========================================= */
+.cp-tp-section {
+    max-width: 1200px;
+    margin: 20px auto 30px auto;
+    padding: 0 20px;
+}
+
+.cp-tp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr; /* Kolom TP sedikit lebih lebar karena poinnya lebih banyak */
+    gap: 20px;
+}
+
+.cp-tp-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 22px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-top: 5px solid #B83227;
+}
+
+.tp-card {
+    border-top-color: #B83227;
+}
+
+.cp-tp-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.cp-tp-header i {
+    font-size: 1.2rem;
+    color: #B83227;
+}
+
+.tp-card .cp-tp-header i {
+    color: #B83227;
+}
+
+.cp-tp-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: 0.5px;
+}
+
+.cp-list, .tp-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #334155;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.cp-list li, .tp-list li {
+    margin-bottom: 10px;
+}
+
+.cp-list li:last-child, .tp-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsif untuk layar HP / Tablet kecil */
+@media (max-width: 768px) {
+    .cp-tp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- MAIN CONTENT & GRID LAYOUT WIREFRAME --- */
 main {
     max-width: 1100px;
@@ -444,4 +520,5 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
 }
