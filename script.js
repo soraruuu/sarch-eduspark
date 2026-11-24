@@ -5,15 +5,15 @@ const mediaLinks = {
     // --- 1. INFOGRAFIS MATERI ---
     infografis1: {
         title: "Infografis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://drive.google.com/file/d/1OAIhulKAw7lsImfDKcrOWzbsT3waOm4X/preview" 
+        url: "https://drive.google.com/file/d/1ZHeS81C87fHFZfEFjzMMHm4KlSoD5Eaj/preview" 
     },
     infografis2: {
         title: "Infografis: Reaksi Peletakan",
-        url: "https://drive.google.com/file/d/1fgZ-5owkpqIFPUqhjWkR3YiWU_R5rVcO/preview"
+        url: "https://drive.google.com/file/d/16qT0PWE23F0OSxhE18HOp__PIYNvAStN/preview"
     },
     infografis3: {
         title: "Infografis: Tegangan dan Regangan",
-        url: "https://drive.google.com/file/d/1FxofnoqFqxP0C3kAIvXlJLCnGUz6wkUK/preview"
+        url: "https://drive.google.com/file/d/188i0G3hJkYBXzcRcxoEen1xlHxoIcx4X/preview"
     },
 
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
