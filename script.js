@@ -3,7 +3,7 @@
    ========================================================= */
 const mediaLinks = {
     // --- 1. INFOGRAFIS MATERI ---
-    infografis1: {
+   infografis1: {
         title: "Infografis: Tumpuan Sendi, Rol, dan Jepit",
         url: "https://drive.google.com/file/d/1OAIhulKAw7lsImfDKcrOWzbsT3waOm4X/preview" 
     },
@@ -19,29 +19,29 @@ const mediaLinks = {
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
     videoTumpuan: {
         title: "Video: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://www.youtube.com"
+        url: "https://youtube.com/shorts/lLw6oOjB7JE?feature=share"
     },
     videoReaksi: {
         title: "Video: Reaksi Peletakan",
-        url: "https://www.youtube.com"
+        url: "https://youtu.be/NoJ_ez5yuq4?si=-Ui_TWkT2V1025Ho"
     },
     videoTegangan: {
         title: "Video: Tegangan dan Regangan",
-        url: "https://www.youtube.com"
+        url: "https://youtu.be/Ufr8k3uLZu8?si=8qahKWYzM8O6crzC"
     },
 
     // --- 3. KUIS EVALUASI / GFORM (3 TOPIC) ---
     kuisTumpuan: {
         title: "Kuis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
     },
     kuisReaksi: {
         title: "Kuis: Reaksi Peletakan",
-        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
     },
     kuisTegangan: {
         title: "Kuis: Tegangan dan Regangan",
-        url: "https://forms.gle/Cq53nGynvsRwTvRS9"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
     }
 };
 
