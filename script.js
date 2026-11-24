@@ -1,9 +1,9 @@
 /* =========================================================
-   KONFIGURASI LINK MEDIA PEMBELAJARAN (EDIT DI SINI)
+KONFIGURASI LINK MEDIA PEMBELAJARAN (EDIT DI SINI)
    ========================================================= */
 const mediaLinks = {
     // --- 1. INFOGRAFIS MATERI ---
-   infografis1: {
+    infografis1: {
         title: "Infografis: Tumpuan Sendi, Rol, dan Jepit",
         url: "https://drive.google.com/file/d/1OAIhulKAw7lsImfDKcrOWzbsT3waOm4X/preview" 
     },
@@ -19,7 +19,7 @@ const mediaLinks = {
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
     videoTumpuan: {
         title: "Video: Tumpuan Sendi, Rol, dan Jepit",
-        url: "htttps://www.youtube.com/embed/lLw6oOjB7JE"
+        url: "https://www.youtube.com/embed/FMfCrAqVzeI"
     },
     videoReaksi: {
         title: "Video: Reaksi Peletakan",
