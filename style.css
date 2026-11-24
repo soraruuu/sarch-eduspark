@@ -191,7 +191,7 @@ header {
 }
 
 .cp-list li, .tp-list li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .cp-list li:last-child, .tp-list li:last-child {
