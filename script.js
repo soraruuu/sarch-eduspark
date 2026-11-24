@@ -19,29 +19,29 @@ const mediaLinks = {
     // --- 2. VIDEO PEMBELAJARAN (3 TOPIC) ---
     videoTumpuan: {
         title: "Video: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://youtube.com/shorts/lLw6oOjB7JE?feature=share"
+        url: "htttps://www.youtube.com/embed/lLw6oOjB7JE"
     },
     videoReaksi: {
         title: "Video: Reaksi Peletakan",
-        url: "https://youtu.be/NoJ_ez5yuq4?si=-Ui_TWkT2V1025Ho"
+        url: "https://www.youtube.com/embed/NoJ_ez5yuq4"
     },
     videoTegangan: {
         title: "Video: Tegangan dan Regangan",
-        url: "https://youtu.be/Ufr8k3uLZu8?si=8qahKWYzM8O6crzC"
+        url: "https://www.youtube.com/embed/Ufr8k3uLZu8"
     },
 
     // --- 3. KUIS EVALUASI / GFORM (3 TOPIC) ---
     kuisTumpuan: {
         title: "Kuis: Tumpuan Sendi, Rol, dan Jepit",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform?embedded=true"
     },
     kuisReaksi: {
         title: "Kuis: Reaksi Peletakan",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform?embedded=true"
     },
     kuisTegangan: {
         title: "Kuis: Tegangan dan Regangan",
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform"
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeMtjA4DX-oEgS6Iyo5kuZCSWRbRI5U9xKuA1Azo0mSf1qSIw/viewform?embedded=true"
     }
 };
 
