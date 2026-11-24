@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('closeModalBtn');
     const mediaCards = document.querySelectorAll('.menu-card[data-media]');
 
-    // Listener Hanya untuk Kartu yang Punya Attribute data-media (Membuka Modal)
-    mediaCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const mediaKey = card.getAttribute('data-media');
-            openMedia(mediaKey);
-        });
-    });
-
+// Gunakan Event Delegation agar kartu di SEMUA tab/menu tetap bisa diklik
+    document.addEventListener('click', (e) => {
+    const card = e.target.closest('.menu-card[data-media]');
+    if (card) {
+        const mediaKey = card.getAttribute('data-media');
+        openMedia(mediaKey);
+    }
+});
     function openMedia(key) {
         const data = mediaLinks[key];
         if (data && data.url) {

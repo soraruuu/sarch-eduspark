@@ -181,19 +181,5 @@
     </div>
 
     <script src="script.js"></script>
-<script>
-  function openMedia(url, judul) {
-    document.getElementById('mediaIframe').src = url;
-    if (judul) {
-      document.getElementById('modalTitle').innerHTML = '<i class="fa-solid fa-book-open"></i> ' + judul;
-    }
-    document.getElementById('mediaModal').style.display = 'flex';
-  }
-
-  document.getElementById('closeModalBtn').addEventListener('click', function() {
-    document.getElementById('mediaModal').style.display = 'none';
-    document.getElementById('mediaIframe').src = '';
-  });
-</script>
 </body>
 </html>
